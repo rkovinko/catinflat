@@ -1,0 +1,46 @@
+.gallery-wrapper {
+    background-color: #abefff;
+    position: relative;
+    .gallery-inner {
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .gallery-content-scroller {
+        width: 10000px;
+        position: relative;
+        transition: all 0.3s;
+        .gallery-item {
+            float: left;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .arrow-block {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        &.left {
+            left: 5%;
+        }
+        &.right {
+            right: 5%;
+        }
+        a {
+            display: block;
+            position: relative;
+            top: 50%;
+            margin-top: -14px;
+            i {
+                font-size: 92px;
+                color: #fff;
+            }
+        }
+        &:hover {
+            a i {
+                color: #848484;
+            }
+        }
+    }
+}

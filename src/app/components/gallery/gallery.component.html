@@ -1,0 +1,26 @@
+<div class="gallery-wrapper">
+  <div class="gallery-inner" id="gallery-wrapper">
+    <div class="gallery-content-scroller" [ngStyle]="{'left': -galleryShift+'px'}">
+      <div class="gallery-item" [ngStyle]="{'width': itemWidth+'px'}">
+        <img src="assets/images/1-g-e.jpg" alt="">
+      </div>
+      <div class="gallery-item" [ngStyle]="{'width': itemWidth+'px'}">
+        <img src="assets/images/2-g-e.jpg" alt="">
+      </div>
+      <div class="gallery-item" [ngStyle]="{'width': itemWidth+'px'}">
+        <img src="assets/images/3-g-e.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="arrow-block left">
+    <a href="javascript:void(0)" (click)="onGalleryClick('left')">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </a>
+  </div>
+  <div class="arrow-block right">
+    <a href="javascript:void(0)" (click)="onGalleryClick('right')">
+        <i class="material-icons">keyboard_arrow_right</i>
+    </a>
+  </div>
+  <div class="clear"></div>
+</div>
